@@ -1,0 +1,42 @@
+.aboutme-container {
+  display: flex;
+  background-color: azure;
+}
+.electronics-container {
+  width: 50%;
+  height: 900px;
+  background-image: url("https://img5.goodfon.com/wallpaper/nbig/1/74/4k-ultra-hd-background-lake-sunset-sky-dusk-colorful-dark-tr.jpg");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  /* text-align: center; */
+  justify-content: center;
+}
+.it-container {
+  width: 50%;
+  height: 900px;
+  background-image: url("https://images.hdqwalls.com/download/abstract-elegance-hs-2560x1440.jpg");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-container {
+  background-color: transparent;
+  width: 25%;
+  height: fit-content;
+  color: white;
+  /* border: 1px solid rgb(151, 149, 149); */
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  transition: 2s ease-out;
+}
+.content-container:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  transition: 2s ease-out;
+}

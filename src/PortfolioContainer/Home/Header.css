@@ -1,0 +1,19 @@
+.header-container {
+  color: white;
+  display: flex;
+  gap: 150px;
+  align-items: center;
+  justify-content: center;
+}
+.name-container {
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.options-container {
+  display: flex;
+  gap: 70px;
+}
+.options-container h3:hover {
+  cursor: pointer;
+  color: orangered;
+}

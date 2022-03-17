@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+// import "./index.css";
+import { AppBar, Button, Toolbar } from "@mui/material";
+import { Fragment } from "react";
+import { Switch, Route, useHistory } from "react-router-dom";
+import AboutMe from "./PortfolioContainer/AboutMe/AboutMe";
+import Home from "./PortfolioContainer/Home/Home";
+import ScrollPage from "./ScrollPage";
 
-function App() {
+export default function App() {
+  const history = useHistory();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AppBar position="static">
+        <Toolbar>
+          <Button color="inherit" onClick={() => history.push("/")}>
+            Home
+          </Button>
+          <Button color="inherit" onClick={() => history.push("/aboutme")}>
+            About Me
+          </Button>
+          <Button color="inherit" onClick={() => history.push("/resume")}>
+            Resume
+          </Button>
+          <Button color="inherit" onClick={() => history.push("/projects")}>
+            Projects
+          </Button>
+          <Button color="inherit" onClick={() => history.push("/contactme")}>
+            Contact Me
+          </Button>
+        </Toolbar>
+      </AppBar>
+      <section className="router-container">
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/aboutme">
+            <AboutMe />
+          </Route>
+          <Route path="/resume">Resume</Route>
+          <Route path="/projects">Projects</Route>
+          <Route path="/contactme">contactme</Route>
+        </Switch>
+      </section>
     </div>
   );
 }
-
-export default App;

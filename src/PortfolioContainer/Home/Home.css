@@ -1,0 +1,13 @@
+.home-container {
+  /* background-image: url("https://img.favpng.com/23/14/17/desktop-wallpaper-1080p-display-resolution-high-definition-video-wallpaper-png-favpng-Pc7JHpBAQPbbUtQk2TehCrQdT.jpg"); */
+  background-image: url("https://cdn.wallpapersafari.com/93/88/6HwnAi.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: fit-content;
+  background-repeat: no-repeat;
+  /* background-color: #1bd7bb; */
+  background-color: #14c9cb;
+  /* background-color: rgb(117, 66, 66); */
+  width: 100%;
+}
