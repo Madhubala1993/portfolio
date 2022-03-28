@@ -1,27 +1,34 @@
 import React from "react";
-import { useRef } from "react";
-import { Heading, Button, Para, Margin } from "./Styles";
+// import { Heading, Button, Para, Margin } from "./Styles";
 import "./Header.css";
 import AboutMe from "../AboutMe/AboutMe";
+import Link from "react-scroll/modules/components/Link";
+import { Button } from "@mui/material";
 
 export default function Header() {
-  let myRef = useRef();
-  const gotoServices = () => {
-    window.scrollTo({ behavior: "smooth", top: myRef.current.offsetTop });
-  };
   return (
     <div className="header-container">
       <div className="name-container">
         <h1>MADHUBALA A</h1>
       </div>
 
-      <div className="options-container">
-        <h3>Home</h3>
-        <h3 onClick={gotoServices}>About Me</h3>
-        <h3>Resume</h3>
-        <h3>Projects</h3>
-        <h3>Contact Me</h3>
-      </div>
+      <nav className="options-container">
+        <Link to="home" smooth={true}>
+          <Button variant="text">Home</Button>
+        </Link>
+        <Link to="aboutMe" smooth={true}>
+          <Button variant="text">About Me</Button>
+        </Link>
+        <Link to="resume" smooth={true}>
+          <Button variant="text">Resume</Button>
+        </Link>
+        <Link to="projects" smooth={true}>
+          <Button variant="text">Projects</Button>
+        </Link>
+        <Link to="contactMe" smooth={true}>
+          <Button variant="text">Contact Me</Button>
+        </Link>
+      </nav>
     </div>
   );
 }

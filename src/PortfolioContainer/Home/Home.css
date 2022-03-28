@@ -1,13 +1,32 @@
 .home-container {
-  /* background-image: url("https://img.favpng.com/23/14/17/desktop-wallpaper-1080p-display-resolution-high-definition-video-wallpaper-png-favpng-Pc7JHpBAQPbbUtQk2TehCrQdT.jpg"); */
-  background-image: url("https://cdn.wallpapersafari.com/93/88/6HwnAi.jpg");
+  background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: fit-content;
-  background-repeat: no-repeat;
-  /* background-color: #1bd7bb; */
-  background-color: #14c9cb;
-  /* background-color: rgb(117, 66, 66); */
+  height: 800px;
   width: 100%;
+}
+.app-section {
+  height: 980px;
+  margin: 0;
+  padding: 0;
+}
+.footer {
+  background-color: yellow;
+  width: 100%;
+  height: 40px;
+  bottom: 0;
+  color: black;
+  text-align: center;
+  font-size: 15 px;
+}
+.homePage {
+  background-color: rgb(0, 0, 0);
+  /* background: url("https://media.istockphoto.com/photos/abstract-technology-dotted-digital-wave-background-picture-id1299187436?b=1&k=20&m=1299187436&s=170667a&w=0&h=izqNihZlWl36_V5LekteIU1sFFJc6DUcpDIskNfJlBg="); */
+  /* background-image: url("https://images.unsplash.com/photo-1548092372-0d1bd40894a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"); */
+
+  /* background-size: cover; */
+  background-image: url("https://img.freepik.com/free-vector/white-gold-geometric-pattern-background-vector_53876-140726.jpg?w=1480");
+  background-repeat: no-repeat;
+  /* height: 1300px; */
+  background-size: cover;
 }

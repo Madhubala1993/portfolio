@@ -1,0 +1,56 @@
+.contactme-box {
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  margin-top: 75px;
+}
+.contactme-container {
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  background-color: rgb(255, 255, 255);
+  -webkit-background-size: cover;
+  height: 880px;
+}
+.pic {
+  /* opacity: 0.5; */
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+}
+.contactme-content {
+  color: #fff;
+  text-align: left;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+}
+.contactme-heading {
+  color: green;
+  font-size: 50px;
+}
+.contactme-body {
+  display: flex;
+  justify-content: space-around;
+  color: black;
+}
+.links {
+  display: flex;
+  gap: 10px;
+}
+.link:hover {
+  cursor: pointer;
+}
+/* .link {
+  margin-bottom: 100px;
+} */
+.contactme-title {
+  font-size: 30px;
+  color: goldenrod;
+}
+.contactme-content {
+  color: black;
+}
